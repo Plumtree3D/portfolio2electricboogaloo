@@ -1,0 +1,22 @@
+{
+    "hiddenAnchor" : "Ignorer la navigation",
+    "title" : "Bonjour et bienvenue !",
+    "description" : "(Je suis dev web du coup)",
+    "aboutMe"     : "<h2 class='sticker' data-text='À propos'> <span class='stickerSpan'> À propos </span> </h2>",
+    "aboutMeMessage" : "> Ca fait plaisir de vous voir ici! <br> >",
+    "aboutMeParagraph0" : "Salut ! Moi c'est Céleste, j'apprends le développement web et web mobile à l'Access Code School de Lons-Le-Saunier.",
+    "aboutMeParagraph1" : "Autonome et flexible, j'arrive souvent à mes fins avec juste assez de temps et de détermination, mais je sais aussi accepter l'échec et la critique en bonne foi sans jamais abandonner.",
+    "aboutMeParagraph2" : "Je m'interesse à plein de choses ! <br> Surtout la musique, je joue de la basse et de la batterie depuis maintenant quelques années mais j'aime également coudre et je fais de la modélisation 3D.",
+    "aboutMeParagraph3" : "Je m'interesse à plein de choses ! <br> Surtout la musique, je joue de la basse et de la batterie depuis maintenant quelques années mais j'aime également coudre et je fais de la modélisation 3D.",
+    "aboutMePopUp" : "Durant ma formation, j'ai eu l'occasion de travailler sur de nombreux projets et d'acquérir blablabla",
+    "PopUpLink" : "OK, MAIS MONTRE !",
+    "myProjects" : "<h2 class='portfolioTitle' data-text='Mes projets'> <span class='stickerSpan'>Mes projets </span> </h2>",
+    "getInTouch" : "<h2 class='sticker'  data-text='Get in touch'> <span class='stickerSpan'>Get in touch</span></h2>",
+    "githubTxt" :  "Jette un oeil à mon github !",
+    "linkedinTxt" : "Ou retrouve-moi sur LinkedIn...",
+    "privacy" : "Mentions légales",
+    "contact" : "Envoie moi un message, <br> je suis à toi dans une minute"
+
+
+
+}
