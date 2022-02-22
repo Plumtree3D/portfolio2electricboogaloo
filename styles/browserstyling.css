@@ -230,6 +230,7 @@ header {
 }
 
 #greetWindow {
+  box-shadow: -5px 6px 6px rgba(0, 0, 0, 0.26);
   position: absolute;
   top: 22%;
   transform: translateX(calc(50vw - 280px));
@@ -242,10 +243,12 @@ header {
   transition: 0.4s;
   z-index: 2;
   animation: hovering 3s infinite ease-in-out;
+  overflow: hidden;
 }
 
 #innerGreetWindow {
   margin-top: 20px;
+  padding-bottom: 60px;
   border-top: solid black 2px;
   transition: 0.4s;
   z-index: 3;
@@ -294,31 +297,26 @@ header {
   transform: translateY(-330px);
 }
 
-.projectsWindow {
-  position: relative;
-  margin: auto;
-  background-color: #2525257c;
-  border: solid 2px white;
-  border-radius: 15px;
-  height: 175px;
-  width: 370px;
-  color: white;
-
+.close {
+  position: absolute;
 }
 
-
-.windowClose {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 15px 0px 15px;
-
+.close:before, .close:after {
+  position: absolute;
+  left: 12px;
+  top: 4px;
+  content: ' ';
+  height: 18px;
+  width: 4px;
+  background-color: rgb(255, 255, 255);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
 
-.windowClose img {
-  width: 28px;
-  height: auto;
-}
 
 #PopUpLink {
   margin-left: 20%;
@@ -327,7 +325,6 @@ header {
 .innerWindow {
   position: absolute;
   bottom: 20px;
-  border-top: white solid 2px;
   padding: 0 15px 0 15px;
 
 }
@@ -602,6 +599,7 @@ h3 {
   transform: translate(-50%);
   color: black;
   text-decoration: none;
+
 }
 
 .privacy:hover {
@@ -632,8 +630,7 @@ h3 {
   padding-bottom: 10vh;
   width: 65%;
   margin: auto;
-  font-family: 'indie';
-  font-weight: 600;
+  font-family: 'varelaRound';
 }
 
 /* BOOK */
@@ -679,6 +676,7 @@ h3 {
   color: black;
   perspective: 1500px;
 
+
 }
 
 .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
@@ -689,6 +687,7 @@ h3 {
   top: 0; left: 0;
   transform-origin: left center;
   transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+
 }
 
 
@@ -696,6 +695,7 @@ h3 {
 .front, .back {
   width: 385px;
   background: #302e58 url(../images/bolt.svg) bottom 10% right 5% no-repeat;
+
 }
 
 .front, .page1, .page3, .page5 {
@@ -710,6 +710,7 @@ h3 {
 
 .page1 { 
   background: url(../images/pageTexture.svg) #efefef;
+  box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.253);
 }
 
 .page2 {
@@ -828,3 +829,142 @@ h3 {
 #hiddenAnchor:focus {
   top: 15px;
 }
+
+.octocat {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 148px;
+  overflow: hidden;
+  cursor: pointer ;
+}
+
+.octocat img {
+  transform: translateX(-135px);
+}
+
+.octocat img:hover {
+  transform: translateX(0);
+}
+
+.pageTemplate {
+  background-color: #F4F4EE;
+  background-image: url("../images/pageTexture.svg");
+  background-size: cover;
+  width: 450px;
+  height: 686px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -1px 2px 3px rgba(47, 25, 19, 0.472);
+  transform: rotate(-3deg);
+}
+
+section p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 25px;
+  white-space: pre-wrap;
+  line-height: 176%;
+}
+
+section h4 {
+  text-align: center;
+  font-size: 36px;
+  margin: 20px;
+  transform: rotate(-2deg);
+  text-transform: uppercase;
+}
+
+.techIcons {
+  width: 100%;
+  display: flex;
+  justify-items: start;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.arrow {
+  position: absolute;
+  right: -8vw;
+  top: 30%;
+  z-index: 10;
+  transform: rotate(15deg);
+  opacity: 0.6;
+}
+
+.projectsWindow {
+  box-shadow: -2px 5px 10px rgba(47, 25, 19, 0.472);
+  overflow: hidden;
+  transform: rotate(2deg);
+  background-color: #fff;
+  border: solid 3px #BBD4F1;
+  border-radius: 11px 11px 5px 5px;
+  width: fit-content;
+  height: 445px;
+  color: black;
+}
+
+.windowClose {
+  background-color: #BBD4F1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 15px 6px 15px;
+
+}
+
+.windowClose div {
+  width: 28px;
+  height: 26px;
+  background-color: #D16666;
+  border-radius: 5px;
+}
+
+.PWoverride {
+  height: 175px;
+   width: 370px;
+   position: relative;
+   left: 0; 
+   transform: rotate(0);
+}
+
+section {
+  font-family: indie; 
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1080px) {
+  section {
+    justify-content: center;
+  }
+}
+
+section:nth-child(even) {
+  flex-direction: row;
+}
+
+section:nth-child(even) .arrow {
+  left: -8vw;
+  transform: scaleX(-1);
+}
+
+section:nth-child(even) .pageTemplate {
+  transform: rotate(3deg);
+}
+
+section:nth-child(even) .projectsWindow {
+  transform: rotate(-2deg);
+}
+
+
+
+
+
+
+
+

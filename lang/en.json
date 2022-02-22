@@ -14,7 +14,9 @@
     "githubTxt" :  "Check me out on github !",
     "linkedinTxt" : "Or fetch me on linkedIn ?",
     "privacy" : "Terms & Privacy",
-    "contact" : "Send a message, <br> I'll come back to you shortly"
+    "contact" : "Send a message, <br> I'll come back to you shortly",
+    "school" : "<h2 class='sticker' data-text='School'> <span class='stickerSpan'> School </span> </h2>"
+
 
 
 

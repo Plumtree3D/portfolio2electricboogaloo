@@ -1,13 +1,12 @@
 <?php 
-$title = "Céleste's Portfolio";
-require 'head.php';
+$title = "";
+require 'includes/head.php';
 ?>
 
-<body id="body">
 <img id=cable class="browserElements" src="images/cable.svg" alt="">
 <header id="header"> 
     <a href="#aboutMe" id="hiddenAnchor"> </a>
-    <?php include 'switches.html' ?>
+    <?php include 'includes/switches.html' ?>
     <div id="greetWindow">
         <span class="pixel" id="title"> </span>
         <div id="innerGreetWindow">
@@ -32,16 +31,17 @@ require 'head.php';
         <div class="inset">
             <p class="pixel" id="aboutMeMessage"> </p>
         </div>
-        <img id="polaroid" src="images/avatar.png" srcset="images/avatar.png 388w, images/avatar_min.png 184w" sizes="(max-width: 388px) 469px, (max-width: 184px) 254px"  alt="Little drawing of my face (colors may vary depending on your monitor and my mood">
+        <img id="polaroid" src="images/polaroid_frame.png"  alt="My face (hair colors may vary depending on your monitor and my mood)">
     </div>
 
     <div class="column">
         <p class="mainText" id="aboutMeParagraph0"></p>
-        <p class="mainText" id="aboutMeParagraph1"></p>
-        <div class="projectsWindow">
+        <div class="projectsWindow PWoverride" >
             <div class="windowClose">
                 <span class="pixel"> projects.exe</span>
-                <img src="images/window-close.svg" alt="">                
+                <div>
+                    <span class="close"></span>
+                </div>          
             </div>
 
             <div class="innerWindow">
@@ -50,6 +50,8 @@ require 'head.php';
             </div>
             
         </div>
+        <p class="mainText" id="aboutMeParagraph1"></p>
+
 
         <p class="mainText" id="aboutMeParagraph3"> </p>
          <a href="#" target="blank"><img id="pick" src="images/pick.svg" alt="élément décoratif"></a>
@@ -65,9 +67,12 @@ require 'head.php';
 <div class="portfolioSection" id="projects">
     <a href="projects.php" class="book">
         <div class="back">  </div>
-        <div class="page6"> <p> Click here to see my various <br> development works and projects ! </p>
+        <div class="page6">
+
+             <p> Click here to see my various <br> development works and projects ! </p>
         </div>
-        <div class="page5"> </div>
+        <div class="page5">
+        <img src="images/horm.svg" alt="" style="transform: scaleX(-1);"> </div>
         <div class="page4"> </div>
         <div class="page3"> </div>
         <div class="page2"> </div>
@@ -79,7 +84,7 @@ require 'head.php';
     </a>
 </div>
 
-<?php include 'footer.php' ?>
+<?php include 'includes/footer.php' ?>
 
 <script src="script.js"> </script>
 

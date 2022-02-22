@@ -11,12 +11,12 @@
     "aboutMePopUp" : "Durant ma formation, j'ai eu l'occasion de travailler sur de nombreux projets et d'acquérir blablabla",
     "PopUpLink" : "OK, MAIS MONTRE !",
     "myProjects" : "<h2 class='portfolioTitle' data-text='Mes projets'> <span class='stickerSpan'>Mes projets </span> </h2>",
-    "getInTouch" : "<h2 class='sticker'  data-text='Get in touch'> <span class='stickerSpan'>Get in touch</span></h2>",
+    "getInTouch" : "<h2 class='sticker'  data-text='Contact'> <span class='stickerSpan'>Contact </span></h2>",
     "githubTxt" :  "Jette un oeil à mon github !",
     "linkedinTxt" : "Ou retrouve-moi sur LinkedIn...",
     "privacy" : "Mentions légales",
-    "contact" : "Envoie moi un message, <br> je suis à toi dans une minute"
-
+    "contact" : "Envoie moi un message, <br> je suis à toi dans une minute",
+    "school" : "<h3 class='sticker' data-text='Formation'> <span class='purpleSpan'> Formation </span> </h3>"
 
 
 }

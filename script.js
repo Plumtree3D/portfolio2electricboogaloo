@@ -2,45 +2,64 @@
   let langCheck = document.getElementById("langCheck");
   let themeCheck = document.getElementById("lightSwitch");
 
-
 console.log(navigator.language)
 
 window.onload = function() {
-    if (navigator.language == "fr-FR" ) {
-      langCheck.checked = true
-    } 
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      themeCheck.checked = true
-    }
+
+      if (  localStorage.getItem('lang') == "fr" || (localStorage.getItem('lang') == null && navigator.language == "fr-FR")) {
+        langCheck.checked = true;
+      } else {
+        langCheck.checked = false;
+      }
+
+      if (localStorage.getItem('theme') == "light" || localStorage.getItem('theme') == null) {
+        themeCheck.checked = true
+      } else {
+        themeCheck.checked = false;
+      }
+    
   setLanguage()
   setTheme()
 }
 
 function setTheme() {
   if (themeCheck.checked == true) {
+    localStorage.setItem('theme', 'light');
+    if (document.location.pathname == "/Projet%2012%20-%20Portfolio%20II%20electric%20boogaloo/") {
+      document.getElementById("header").classList.remove("nightmode");
+      document.getElementById("greetWindow").style.cssText = "background-color: #BBD4F1; color: #3a3a3a; border: solid 3px #BBD4F1";
+      document.getElementById("innerGreetWindow").style.cssText = "border-top: solid 2px #BBD4F1; background-color: #FEFFBC; ";
+      removeStars();
+    }
     document.getElementById("body").style.backgroundColor = "#feffbc";
     document.getElementById("body").style.color = "#3a3a3a";
-    document.getElementById("header").classList.remove("nightmode");
-    document.getElementById("greetWindow").style.cssText = "background-color: #feffbc; color: #3a3a3a;";
-    document.getElementById("innerGreetWindow").style.cssText = "border-top: solid 2px #3a3a3a;";
-    removeStars();
+
+
     
   } else {
+    localStorage.setItem('theme', 'dark');
+    if (document.location.pathname == "/Projet%2012%20-%20Portfolio%20II%20electric%20boogaloo/") {
+      document.getElementById("header").classList.add("nightmode");
+      document.getElementById("greetWindow").style.cssText = "background-color: #9871ea; color: #eaebe1; border: solid 2px white";
+      document.getElementById("innerGreetWindow").style.cssText = "border-top: solid 2px #;";
+      starryNight();
+    }
     document.getElementById("body").style.backgroundColor = "#4d3977";
     document.getElementById("body").style.color = "#eaebe1";
-    document.getElementById("header").classList.add("nightmode");
-    document.getElementById("greetWindow").style.cssText = "background-color: #9871ea; color: #eaebe1; border: solid 2px white";
-    document.getElementById("innerGreetWindow").style.cssText = "border-top: solid 2px #;";
-    starryNight();
+
   }
 
 }
 
 function setLanguage() {
-    if (langCheck != null && langCheck.checked == true && navigator.language == "fr-FR") {
-      language = "fr" 
+
+    if (langCheck.checked == true) {
+      language = "fr";
+      localStorage.setItem('lang', 'fr');
     } else {
-      language = "en"}
+      language = "en";
+      localStorage.setItem('lang', 'en');
+    }
 
     let request = new XMLHttpRequest();
   
@@ -57,10 +76,14 @@ function setLanguage() {
 
 function populate(json) {
   console.log()
+
     let start = 0;
     for ( let i = start; i < Object.keys(json).length; i++) {
+      let element = document.getElementById(Object.keys(json)[i]);
       console.log(Object.keys(json)[i])
-    document.getElementById(Object.keys(json)[i]).innerHTML = Object.values(json)[i];
+      if (element != null ) {
+        document.getElementById(Object.keys(json)[i]).innerHTML = Object.values(json)[i];
+      }
     }
 }
 
