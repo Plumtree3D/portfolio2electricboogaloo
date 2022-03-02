@@ -15,9 +15,9 @@
     "linkedinTxt" : "Or fetch me on linkedIn ?",
     "privacy" : "Terms & Privacy",
     "contact" : "Send a message, <br> I'll come back to you shortly",
-    "school" : "<h2 class='sticker' data-text='School'> <span class='stickerSpan'> School </span> </h2>"
-
-
+    "works" : "<h3 class='sticker' data-text='Works'> <span class='purpleSpan'> Works </span> </h3>",
+    "school" : "<h3 class='sticker' data-text='School'> <span class='purpleSpan'> School </span> </h3>",
+    "misc" : "<h3 class='sticker' data-text='Miscellaneous'> <span class='purpleSpan'> Miscellaneous </span> </h3>"
 
 
 }

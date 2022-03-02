@@ -48,8 +48,8 @@
 
     </div>
 
-    <img src="images/enveloppelower.svg" alt="" id="calque" class="enveloppe browserElements">
-    <img src="images/enveloppeupper.svg" alt="" class="enveloppe browserElements">
+    <img src="images/enveloppelower.svg" alt="" id="calque" class="enveloppe">
+    <img src="images/enveloppeupper.svg" alt="" class="enveloppe">
 
     <div class="mediaButtons">
         <span id="githubTxt"></span>
@@ -58,7 +58,7 @@
         <span id="linkedinTxt"> </span>
         <a id="linkedin" href="https://www.linkedin.com/in/c%C3%A9leste-robert-casals/" target="blank"><img
                 src="images/linkedin.svg" alt="Link to my LinkedIn"></a>
-        <img id="imgButton" src="images/button.svg" alt="éléments décoratifs" width="300">
+        <img id="imgButton" src="images/button.png" alt="éléments décoratifs" width="300">
 
         <a id="privacy" href="privacy.php"> </a>
 

@@ -20,10 +20,17 @@
         echo 'Exception error : '. "<br>". $error->getMessage();
     }
 
-    $fetch = "SELECT * FROM projects";
+    $fetch = "SELECT * FROM projects" ;
     $pdo = new PDO("mysql:dbname=portfolio; host=localhost","root", "");
     $temp = $pdo->prepare($fetch);
     $temp->execute();
     $projects = $temp->fetchAll(PDO::FETCH_ASSOC);
+
+    $fetch = "SELECT * from icons as i INNER JOIN project_icons as j ON i.id_icons=j.id_icons;" ;
+    $pdo = new PDO("mysql:dbname=portfolio; host=localhost","root", "");
+    $temp = $pdo->prepare($fetch);
+    $temp->execute();
+    $icons = $temp->fetchAll(PDO::FETCH_ASSOC);
+    
     
     ?>

@@ -7,11 +7,11 @@ require 'includes/head.php';
 
 <div class="terms">
         <div class="section">
+        <a class="goBack" href="index.php"> <img src="images/back.png" title="Go back to homepage" alt="Go to homepage"></a>
             <h3 class="sticker" data-text="Terms & Privacy">
              <span class="purpleSpan"> Terms & Privacy </span> 
             </h3>
         </div>
-        <a class="goBack" href="index.php"> <img src="images/back.png" alt="Go to homepage"></a>
         <br>
 
         <div class="policy">

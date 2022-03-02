@@ -7,10 +7,10 @@ require 'includes/head.php';
 <header id="header"> 
     <a href="#aboutMe" id="hiddenAnchor"> </a>
     <?php include 'includes/switches.html' ?>
-    <div id="greetWindow">
+    <!-- <div id="greetWindow">
         <span class="pixel" id="title"> </span>
         <div id="innerGreetWindow">
-            <h3 class="sticker" data-text="Céleste's">
+            <h3 class="sticker" data-text="Céleste's" style="margin: 0 -100px 0 0;">
                 <span class="purpleSpan"> Céleste's </span> </h3>
             <h1 class="sticker" data-text="Portfolio">
                 <span class="stickerSpan">Portfolio</span>
@@ -19,7 +19,7 @@ require 'includes/head.php';
             <span id="description"> </span>
             <a href="#aboutMe" class="buttonLink"> OK </a>
         </div>
-    </div>
+    </div> -->
 
 </header>
 <hr>
@@ -64,7 +64,7 @@ require 'includes/head.php';
 
 <hr>
 
-<div class="portfolioSection" id="projects">
+<!-- <div class="portfolioSection" id="projects">
     <a href="projects.php" class="book">
         <div class="back">  </div>
         <div class="page6">
@@ -82,7 +82,7 @@ require 'includes/head.php';
             </div>
         </div>
     </a>
-</div>
+</div> -->
 
 <?php include 'includes/footer.php' ?>
 

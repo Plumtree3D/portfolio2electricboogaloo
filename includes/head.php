@@ -9,8 +9,9 @@
     <meta name="description" content="Welcome to my portfolio! I'm a student front and back end developer from France. ">
     <title> <?= $title ?> Céleste's Portfolio </title>
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <!-- <link rel="stylesheet" media="screen and (max-width: 1023px)" href="styles/mobilestyling.css"> -->
     <link rel="stylesheet" href="styles/browserstyling.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1023px)" href="styles/mobilestyling.css"> -->
+
 
 </head>
 <body id="body">

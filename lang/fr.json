@@ -16,7 +16,9 @@
     "linkedinTxt" : "Ou retrouve-moi sur LinkedIn...",
     "privacy" : "Mentions légales",
     "contact" : "Envoie moi un message, <br> je suis à toi dans une minute",
-    "school" : "<h3 class='sticker' data-text='Formation'> <span class='purpleSpan'> Formation </span> </h3>"
+    "works" : "<h3 class='sticker' data-text='Travaux'> <span class='purpleSpan'> Travaux </span> </h3>",
+    "school" : "<h3 class='sticker' data-text='Formation'> <span class='purpleSpan'> Formation </span> </h3>",
+    "misc" : "<h3 class='sticker' data-text='Autres'> <span class='purpleSpan'> Autres </span> </h3>"
 
 
 }

@@ -1,5 +1,17 @@
-<?php foreach($projects as $project) : ?> 
-    <section>
+    <section id="<?= $project['id_project']?>">
+            <div class="mobileProjectHeader">
+                <div>
+                    <h4><?= $project['title'] ?> </h4>
+                </div>
+                <div class="techIcons">
+                    <?php foreach ($icons as $icon) :
+                    if ($icon['id_project'] == $project['id_project']) : ?>
+                    <img src="icons/<?=$icon['path']?>" alt="<?=$icon['name']?>" title="<?=$icon['name']?>">
+                    <?php endif;
+                endforeach; ?>
+                </div>
+            </div>
+        <img src="images/Arrow.svg" alt="" class="arrow">
         <div class="projectsWindow">
             <div class="windowClose">
                 <span class="pixel"> <?= $project['title'] ?> </span>
@@ -12,19 +24,23 @@
             </a>
         </div>
         <div class="pageTemplate">
-            <div>
-                <h4><?= $project['title'] ?></h4>
+            <div class="desktopProjectHeader">
+                <div>
+                    <h4><?= $project['title'] ?> </h4>
+                </div>
+                <div class="techIcons">
+                    <?php foreach ($icons as $icon) :
+                    if ($icon['id_project'] == $project['id_project']) : ?>
+                    <img src="icons/<?=$icon['path']?>" alt="<?=$icon['name']?>" title="<?=$icon['name']?>">
+                    <?php endif;
+                endforeach; ?>
+                </div>
             </div>
-            <div class="techIcons">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/symfony-logo-png-transparent.png" style="width:45px; height: 45px;" alt="">
-                <img src="https://sass-lang.com/assets/img/styleguide/seal-color-reversed-c50d9b78.png" style="width:45px; height: 45px;" alt="">
-            </div>
-            <img src="images/Arrow.svg" alt="" class="arrow">
             <div>
-                <p class="" ><?= $project['project_en'] ?> </p>
-                <p class="" style="display: none;"><?= $project['project_fr'] ?> </p>
+                <p class="project_en" ><?= $project['project_en'] ?> </p>
+                <p class="project_fr"><?= $project['project_fr'] ?> </p>
                 <?php if ($project['github'] != null ) { ?>
-                    <a href="https://github.com/Plumtree3D/<?= $project['github'] ?>" target="_blank" > 
+                    <a href="https://github.com/Plumtree3D/<?= $project['github'] ?>" title="Github" target="_blank" > 
                         <div class="octocat">
                             <img src="icons/octocat.png" alt="" id="octo" >
                         </div>
@@ -32,14 +48,4 @@
                 <?php }  ?>
             </div>
         </div>
-        
-  
-
-
-
-
     </section>
-
-
-
-<?php endforeach; ?>

@@ -14,8 +14,8 @@
 }
 
 ::selection {
-  background-color: transparent;
-  color: #1F5F88;
+  background-color: #DDB2FF;
+  color: white;
 }
 
 @keyframes hovering {
@@ -92,6 +92,7 @@ input {
   width: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 121;
 }
 
 .switch {
@@ -494,7 +495,6 @@ h3 {
   padding-top: 20px;
   color: #DDB2FF;
   font-size: 60px;
-  margin: 0 -100px 0 0;
 }
 
 .sticker {
@@ -608,8 +608,8 @@ h3 {
 
 .goBack {
   position: absolute;
-  left: 50px;
-  top: 5vh;
+  left: 25vw;
+  top: 8vh;
   transform: rotate(5deg);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -851,6 +851,7 @@ h3 {
   background-color: #F4F4EE;
   background-image: url("../images/pageTexture.svg");
   background-size: cover;
+  color: #040425c7;
   width: 450px;
   height: 686px;
   display: flex;
@@ -879,14 +880,18 @@ section h4 {
 .techIcons {
   width: 100%;
   display: flex;
-  justify-items: start;
-  margin-bottom: 20px;
-  margin-left: 15px;
+  justify-items: space-around;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.techIcons img {
+  height: 48px;
+  margin-right: 15px;
 }
 
 .arrow {
   position: absolute;
-  right: -8vw;
   top: 30%;
   z-index: 10;
   transform: rotate(15deg);
@@ -896,6 +901,7 @@ section h4 {
 .projectsWindow {
   box-shadow: -2px 5px 10px rgba(47, 25, 19, 0.472);
   overflow: hidden;
+  z-index: 8;
   transform: rotate(2deg);
   background-color: #fff;
   border: solid 3px #BBD4F1;
@@ -905,13 +911,22 @@ section h4 {
   color: black;
 }
 
+.projectsWindowNight {
+  background-color: #0000004f;
+  border: solid 3px #0000004f;
+  color: white;
+}
+
 .windowClose {
   background-color: #BBD4F1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 6px 15px 6px 15px;
+}
 
+.windowCloseNight {
+  background-color: #0000004f;
 }
 
 .windowClose div {
@@ -921,19 +936,14 @@ section h4 {
   border-radius: 5px;
 }
 
-.PWoverride {
-  height: 175px;
-   width: 370px;
-   position: relative;
-   left: 0; 
-   transform: rotate(0);
-}
+
 
 section {
+  position: relative;
   font-family: indie; 
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
 }
@@ -944,12 +954,12 @@ section {
   }
 }
 
+
 section:nth-child(even) {
   flex-direction: row;
 }
 
 section:nth-child(even) .arrow {
-  left: -8vw;
   transform: scaleX(-1);
 }
 
@@ -961,8 +971,159 @@ section:nth-child(even) .projectsWindow {
   transform: rotate(-2deg);
 }
 
+.bookmark {
+  color: wheat;
+  position: fixed;
+  right: 5%;
+  top: 0;
+  width: 160px;
+  background-color: #18185f;
+  transition: 0.2s;
+  box-shadow: 2px 5px 2px black;
+  padding: 25px 0;
+  z-index: 15;
+  transform: translateY(calc(-100% + 25px));
+}
+
+.bookmark::after {
+  z-index: 14;
+  color: #18185f;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 65px solid;
+  display: inline-block;
+  content: '';
+  position: absolute;
+  filter: drop-shadow(2px 5px 2px rgb(0, 0, 0));
+  left: 0;
+  bottom: -65px;
+}
 
 
+.bookmark a {
+  color: wheat;
+  text-decoration: none;
+}
+
+.bookmark:hover {
+  transform: translateY(0); 
+}
+
+.mobileProjectHeader {
+  display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  section, section:nth-child(even) {
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    margin-bottom: 20vh;
+  }
+  .goBack, .bookmark, .arrow, .desktopProjectHeader, .enveloppe, #cable {
+    display: none;
+  }
+  .projectsWindow, section:nth-child(even) .projectsWindow { 
+    max-width: 95%;
+    height: 330px;
+    transform: rotate(0deg);
+  }
+  .mobileProjectHeader {
+    width: 100%;
+    display: block;
+    background-image: url(../images/titleBackground.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .techIcons {
+    justify-content: center;
+  }
+  .pageTemplate, section:nth-child(even) .pageTemplate {
+    min-height: 560px;
+    padding-top: 5vh;
+    transform: rotate(0);
+    width: auto;
+  }
+  .contactForm {
+    width: 60%;
+    margin-left: 20%;
+    color: black;
+  }
+  footer {
+    padding-bottom: 0;
+    flex-direction: column;
+  }
+  .mediaButtons {
+    width: 100%;
+  }
+
+  .contactForm {
+    margin: auto;
+    width: 90%;
+  }
+
+  form {
+    margin: auto;
+    width: auto;
+  }
+
+  input[type=text], input[type=email] {
+    width: 90%;
+  }
+
+  .section {
+    background: none;
+  }
+
+  .row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .column {
+    width: 90%;
+    margin: auto;
+  }
+
+  .jack {
+    width: 90%;
+    margin: auto;
+    transform: translateY(0);
+    float: none;
+  }
+
+  #polaroid {
+    transform: translate(0) rotate(0);
+  }
+
+  h1 {
+    font-size: 50px; /*FALLBACK FOR OLDER VERSIONS OF SAFARI */
+    font-size: clamp(50px, 20vw, 120px);
+  }
+
+  h2 {
+    font-size: 40px; /*FALLBACK FOR OLDER VERSIONS OF SAFARI */
+    font-size: clamp(40px, 15vw, 90px);
+  }
+
+  h3 {
+    font-size: 30px; /*SERIOUSLY IF YOU'RE VIEWING THIS WEBSITE FROM AN iPhone 6 I'M SO SORRY IT PROLLY LOOK LIKE SHIT */
+    font-size: clamp(30px, 10vw, 60px);
+  }
+
+
+
+}
+
+.PWoverride {
+  height: 175px;
+   width: 370px;
+   position: relative;
+   left: 0; 
+   margin: auto;
+   transform: rotate(0);
+}
 
 
 
