@@ -17,11 +17,10 @@
   background-color: #DDB2FF;
   color: white;
 }
-
 @keyframes hovering {
-  0% {transform: translateX(calc(50vw - 280px)) translateY(10px);}
-  50% {transform: translateX(calc(50vw - 280px)) translateY(0px);}
-  100% {transform: translateX(calc(50vw - 280px)) translateY(10px);}
+  0% {transform: translateX(-50%) translateY(10px);}
+  50% {transform: translateX(-50%) translateY(0px);}
+  100% {transform: translateX(-50%) translateY(10px);}
 
 }
 
@@ -234,7 +233,7 @@ header {
   box-shadow: -5px 6px 6px rgba(0, 0, 0, 0.26);
   position: absolute;
   top: 22%;
-  transform: translateX(calc(50vw - 280px));
+  left: 50%;
   background-color: #FEFFBC;
   border-radius: 15px;
   border: solid 2px black;
@@ -245,6 +244,7 @@ header {
   z-index: 2;
   animation: hovering 3s infinite ease-in-out;
   overflow: hidden;
+
 }
 
 #innerGreetWindow {
@@ -333,6 +333,8 @@ header {
 #polaroid {
   max-width:388px;
   transform: translate(10vw, 421px) rotate(8deg);
+  box-shadow: -2px 5px 6px rgba(47, 25, 19, 0.472);
+
 }
 
 
@@ -870,6 +872,7 @@ section p {
 }
 
 section h4 {
+  color: rgba(16, 10, 32, 0.808);
   text-align: center;
   font-size: 36px;
   margin: 20px;
@@ -906,9 +909,10 @@ section h4 {
   background-color: #fff;
   border: solid 3px #BBD4F1;
   border-radius: 11px 11px 5px 5px;
-  width: fit-content;
-  height: 445px;
+  width: 653px;
+  height: fit-content;
   color: black;
+  object-fit: contain;
 }
 
 .projectsWindowNight {
@@ -981,7 +985,7 @@ section:nth-child(even) .projectsWindow {
   transition: 0.2s;
   box-shadow: 2px 5px 2px black;
   padding: 25px 0;
-  z-index: 15;
+  z-index: 121;
   transform: translateY(calc(-100% + 25px));
 }
 
@@ -1000,13 +1004,19 @@ section:nth-child(even) .projectsWindow {
 }
 
 
+
 .bookmark a {
+  margin-left: 10px;
   color: wheat;
   text-decoration: none;
 }
 
 .bookmark:hover {
   transform: translateY(0); 
+}
+
+.bookmark a:hover {
+  text-decoration: underline wavy;
 }
 
 .mobileProjectHeader {
@@ -1019,20 +1029,22 @@ section:nth-child(even) .projectsWindow {
     justify-content: center;
     flex-direction: column;
     height: 80%;
-    margin-bottom: 20vh;
+    padding-bottom: 20vh;
+    overflow: hidden;
   }
   .goBack, .bookmark, .arrow, .desktopProjectHeader, .enveloppe, #cable {
     display: none;
   }
   .projectsWindow, section:nth-child(even) .projectsWindow { 
     max-width: 95%;
-    height: 330px;
     transform: rotate(0deg);
   }
   .mobileProjectHeader {
     width: 100%;
+    height: 150px;
     display: block;
     background-image: url(../images/titleBackground.png) ;
+    background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -1042,7 +1054,7 @@ section:nth-child(even) .projectsWindow {
   .pageTemplate, section:nth-child(even) .pageTemplate {
     min-height: 560px;
     padding-top: 5vh;
-    transform: rotate(0);
+    transform: rotate(2deg);
     width: auto;
   }
   .contactForm {
@@ -1079,6 +1091,9 @@ section:nth-child(even) .projectsWindow {
   .row {
     flex-direction: column;
     height: auto;
+    align-items: center;
+    margin-left: 0;
+    overflow: hidden;
   }
 
   .column {
@@ -1094,7 +1109,8 @@ section:nth-child(even) .projectsWindow {
   }
 
   #polaroid {
-    transform: translate(0) rotate(0);
+    transform: translate(0) rotate(3deg);
+    margin-bottom: 25px;
   }
 
   h1 {
@@ -1112,6 +1128,48 @@ section:nth-child(even) .projectsWindow {
     font-size: clamp(30px, 10vw, 60px);
   }
 
+  #PopUpLink {
+    margin: 0;
+  }
+
+  .inset {
+    width: 80%;
+  }
+
+  .policy {
+    width: 95%;
+  }
+
+  #greetWindow {
+    width: 340px;
+    height: auto;
+  }
+
+  .portfolioSection {
+    justify-content: start;
+    background: none;
+  }
+
+  .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
+    width: 308px;
+  }
+
+  .book {
+    height: 484px;
+  }
+
+  .book h2 {
+    font-size: 40px;
+  }
+
+  section h4 {
+    margin: 0px;
+    transform: rotate(2deg);
+  }
+
+  .sticker::before {
+    -webkit-text-stroke: 15px #fff;
+  }
 
 
 }

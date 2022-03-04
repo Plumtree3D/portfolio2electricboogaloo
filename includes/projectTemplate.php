@@ -20,7 +20,7 @@
                 </div>          
             </div>
             <a href="<?= $project['url'] ?>">
-                <img src="images/<?= $project['image'] ?> " alt="">
+                <img src="images/<?= $project['image'] ?> " alt="Screen capture of <?= $project['title']?>" style="width:100%">
             </a>
         </div>
         <div class="pageTemplate">

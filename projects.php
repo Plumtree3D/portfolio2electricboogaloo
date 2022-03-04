@@ -8,8 +8,8 @@ require 'includes/db.php';
 <?php include 'includes/switches.html' ?>
 
 <div class="bookmark">
-    <span> Works</span>
-    <ul>
+    <a href="#works" > Works</a>
+    <ol>
         <?php foreach($projects as $project) :
             if($project['category'] == 'work') { 
         ?> 
@@ -17,9 +17,9 @@ require 'includes/db.php';
         <?php
         } endforeach;
         ?>
-    </ul>
-    <span> School </span>
-    <ul>
+    </ol>
+    <a href="#school"> School </a>
+    <ol>
         <?php foreach($projects as $project) :
             if($project['category'] == 'school') {
         ?> 
@@ -27,9 +27,9 @@ require 'includes/db.php';
         <?php
         } endforeach;
         ?>
-    </ul>
-    <span> Misc </span>
-    <ul>
+    </ol>
+    <a href="#misc"> Misc </a>
+    <ol>
         <?php foreach($projects as $project) : 
             if($project['category'] == 'misc') {
         ?> 
@@ -37,11 +37,14 @@ require 'includes/db.php';
         <?php
         } endforeach;
         ?>
-    </ul>
+    </ol>
 </div>
 
 <a class="goBack" href="/"> <img src="images/back.png" alt="Go to homepage"></a>
 <div class="sectionTitle" id="myProjects"> </div>
+<div class="policy">
+    <p class="mainText" id="projectsDesc"> </p>
+</div>
 
 <div class="sectionTitle" id="works"> </div>
 <div class="alternate">
