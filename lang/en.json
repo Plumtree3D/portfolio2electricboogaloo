@@ -19,7 +19,9 @@
     "works" : "<h3 class='sticker' data-text='Works'> <span class='purpleSpan'> Works </span> </h3>",
     "school" : "<h3 class='sticker' data-text='School'> <span class='purpleSpan'> School </span> </h3>",
     "misc" : "<h3 class='sticker' data-text='Miscellaneous'> <span class='purpleSpan'> Miscellaneous </span> </h3>",
-    "projectsDesc": "On this page, you'll find the best projects I've had the occasion to work on. It can give you an idea of what I can do and which technologies I'm used to, so go ahead and take a look ! "
+    "projectsDesc": "On this page, you'll find the best projects I've had the occasion to work on. It can give you an idea of what I can do and which technologies I'm used to, so go ahead and take a look ! ",
+    "404": "<h2 class='portfolioTitle' data-text='404'> <span class='stickerSpan'>404 </span> </h2>",
+    "notFound": "Sorryyyy! This page doesn't exist. It was either removed, put somewhere else or you just typed random stuff in the URL to check if there was an error page. <br> You can now <a href='/'> go back to the main page. </a> "
 
 
 }
