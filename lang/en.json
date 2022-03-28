@@ -4,9 +4,10 @@
     "description" : "(I'm a web developper btw)",
     "aboutMe"     : "<h2 class='sticker' data-text='About me'> <span class='stickerSpan'> About me </span> </h2>",
     "aboutMeMessage" : "> Happy to see you see me ! <br> >",
-    "aboutMeParagraph0" : "Hi, my name is Céleste, I am a french, twenty-something years old student attending the Access Code School course in Lons-le-Saunier (France), I am learning back and front end web development for desktop and mobile devices.",
+    "aboutMeParagraph0" : "Hi, my name is Céleste Robert, I am a french, twenty-something years old student attending the Access Code School course in Lons-le-Saunier (France), I am learning back and front end web development for desktop and mobile devices.",
     "aboutMeParagraph1" : "Independant and extremely driven, I am always eager to push the boundaries of my knowledge and I reach my goals more often than not. On the other hand I also know how to take and follow criticism with good faith and an open mind.",
     "aboutMeParagraph2" : "I like art! <br> Especially music, I have been playing drums and bass guitar for quite a few years now and I also enjoy sewing as well as 3D art and animation.",
+    "aboutMeParagraph3" : "I basically grew up with the internet so it's fair to say I've always had a huge interest in computers and technologies. I'd also like to make the internet more accessible and inclusive, as well as ecologically responsible.",
     "aboutMePopUp" : "I've had the occasion to work on several web development projects, giving me the opportunity to blablah",
     "PopUpLink" : "OK, SHOW ME THE STUFF!",
     "myProjects" : "<h2 class='portfolioTitle' data-text='My projects'> <span class='stickerSpan'>My projects </span> </h2>",
@@ -17,7 +18,8 @@
     "contact" : "Send a message, <br> I'll come back to you shortly",
     "works" : "<h3 class='sticker' data-text='Works'> <span class='purpleSpan'> Works </span> </h3>",
     "school" : "<h3 class='sticker' data-text='School'> <span class='purpleSpan'> School </span> </h3>",
-    "misc" : "<h3 class='sticker' data-text='Miscellaneous'> <span class='purpleSpan'> Miscellaneous </span> </h3>"
+    "misc" : "<h3 class='sticker' data-text='Miscellaneous'> <span class='purpleSpan'> Miscellaneous </span> </h3>",
+    "projectsDesc": "On this page, you'll find the best projects I've had the occasion to work on. It can give you an idea of what I can do and which technologies I'm used to, so go ahead and take a look ! "
 
 
 }

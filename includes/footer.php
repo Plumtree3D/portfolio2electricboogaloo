@@ -6,9 +6,9 @@
     <div class="contactForm">
         <form method="GET" action="#">
             <p id="contact">  </p>
-            <input type="text" name="nom" required id="name" placeholder="Your name..." value="<?php if(isset($_GET['nom'])) { echo $_GET['nom']; } ?>">
-            <input type="email" name="mail" id="email" placeholder="Email adress here..." value="<?php if(isset($_GET['mail'])) { echo $_GET['mail']; } ?>" />
-            <textarea id="subject" name="message" placeholder="Write something nice..."><?php if(isset($_GET['message'])) { echo $_GET['message']; }?></textarea>
+            <input type="text" name="nom" required id="name" placeholder="Your name..." value="">
+            <input type="email" name="mail" id="email" placeholder="Email adress here..." value="">
+            <textarea id="subject" name="message" placeholder="Write something nice..."></textarea>
             <input type="submit" name="mailform" value="Send ?">
             <?php echo $msg=""; ?>
 
@@ -34,13 +34,13 @@
                 </body>
             </html>
             ';
-            mail("ham.in.kneesocks@gmail.com", "Sujet du message", $message, $header);
+            mail("ham.in.kneesocks@gmail.com", "Contact du portfolio", $message, $header);
             echo "<div class='pixel'> Roger roger, I got you 5/5 ! </div>";
            // header("Refresh: 5; https://ilanr.promo-93.codeur.online/portfolio/");
         } else {
             echo " <div class='pixel'> Something went wrong! Please try again. </div> ";
         }
-        }
+    }
 ?>
 
         </form>
@@ -60,7 +60,7 @@
                 src="images/linkedin.svg" alt="Link to my LinkedIn"></a>
         <img id="imgButton" src="images/button.png" alt="éléments décoratifs" width="300">
 
-        <a id="privacy" href="privacy.php"> </a>
+        <a id="privacy" class="buttonLink" href="privacy"> </a>
 
     </div>
 

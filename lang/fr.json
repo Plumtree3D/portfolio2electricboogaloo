@@ -4,10 +4,10 @@
     "description" : "(Je suis dev web du coup)",
     "aboutMe"     : "<h2 class='sticker' data-text='À propos'> <span class='stickerSpan'> À propos </span> </h2>",
     "aboutMeMessage" : "> Ca fait plaisir de vous voir ici! <br> >",
-    "aboutMeParagraph0" : "Salut ! Moi c'est Céleste, j'apprends le développement web et web mobile à l'Access Code School de Lons-Le-Saunier.",
-    "aboutMeParagraph1" : "Autonome et flexible, j'arrive souvent à mes fins avec juste assez de temps et de détermination, mais je sais aussi accepter l'échec et la critique en bonne foi sans jamais abandonner.",
-    "aboutMeParagraph2" : "Je m'interesse à plein de choses ! <br> Surtout la musique, je joue de la basse et de la batterie depuis maintenant quelques années mais j'aime également coudre et je fais de la modélisation 3D.",
-    "aboutMeParagraph3" : "Je m'interesse à plein de choses ! <br> Surtout la musique, je joue de la basse et de la batterie depuis maintenant quelques années mais j'aime également coudre et je fais de la modélisation 3D.",
+    "aboutMeParagraph0" : "Salut ! Moi c'est Céleste Robert, j'ai appris le développement web et web mobile à l'Access Code School de Lons-Le-Saunier.",
+    "aboutMeParagraph1" : "Autonome et flexible, j'arrive souvent à mes fins avec juste assez de temps et de détermination, mais je sais aussi accepter l'échec et la critique en bonne foi sans pour autant abandonner.",
+    "aboutMeParagraph2" : "Je m'interesse aussi à plein de choses ! <br> Notamment la musique, je joue de la basse et de la batterie depuis maintenant quelques années mais j'aime également coudre et je fais de la modélisation 3D.",
+    "aboutMeParagraph3" : "En ayant grandi avec internet, j'ai toujours eu un certain intérêt pour l'informatique et les technologies. J'essaye aussi de mettre un point d'honneur à rendre internet plus accessible, inclusif et écologiquement responsable, ce sont des points trop souvent pris à la légère.  ",
     "aboutMePopUp" : "Durant ma formation, j'ai eu l'occasion de travailler sur de nombreux projets et d'acquérir blablabla",
     "PopUpLink" : "OK, MAIS MONTRE !",
     "myProjects" : "<h2 class='portfolioTitle' data-text='Mes projets'> <span class='stickerSpan'>Mes projets </span> </h2>",
@@ -18,7 +18,8 @@
     "contact" : "Envoie moi un message, <br> je suis à toi dans une minute",
     "works" : "<h3 class='sticker' data-text='Travaux'> <span class='purpleSpan'> Travaux </span> </h3>",
     "school" : "<h3 class='sticker' data-text='Formation'> <span class='purpleSpan'> Formation </span> </h3>",
-    "misc" : "<h3 class='sticker' data-text='Autres'> <span class='purpleSpan'> Autres </span> </h3>"
+    "misc" : "<h3 class='sticker' data-text='Autres'> <span class='purpleSpan'> Autres </span> </h3>",
+    "projectsDesc": "C'est ici que je met les projets les plus intéressants sur lesquels j'ai eu l'occasion de travailler. Ça peut donner une idée de mes compétences et des technologies que j'ai utilisées alors hésite pas à explorer un peu ! "
 
 
 }

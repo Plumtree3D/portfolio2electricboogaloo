@@ -19,8 +19,12 @@
                     <span class="close"></span>
                 </div>          
             </div>
-            <a href="<?= $project['url'] ?>">
-                <img src="images/<?= $project['image'] ?> " alt="Screen capture of <?= $project['title']?>" style="width:100%">
+            <a href="<?= $project['url'] ?>" target="_blank">
+            <img srcset="images/<?= $project['image'] ?>400w.png 480w, images/<?= $project['image'] ?>600w.png 600w"
+            sizes="(max-width: 600px) 480px, 800px"
+            src="images/<?= $project['image'] ?>600w.png"
+            alt="Screen capture of <?= $project['title']?>"
+            style="width:100%">
             </a>
         </div>
         <div class="pageTemplate">
@@ -40,7 +44,7 @@
                 <p class="project_en" ><?= $project['project_en'] ?> </p>
                 <p class="project_fr"><?= $project['project_fr'] ?> </p>
                 <?php if ($project['github'] != null ) { ?>
-                    <a href="https://github.com/Plumtree3D/<?= $project['github'] ?>" title="Github" target="_blank" > 
+                    <a href="<?= $project['github'] ?>" title="Github" target="_blank" > 
                         <div class="octocat">
                             <img src="icons/octocat.png" alt="" id="octo" >
                         </div>

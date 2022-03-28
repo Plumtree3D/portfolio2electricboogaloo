@@ -28,7 +28,7 @@ function setTheme() {
   
   if (themeCheck.checked == true) {
     localStorage.setItem('theme', 'light');
-    if (document.location.pathname == "/Projet%2012%20-%20Portfolio%20II%20electric%20boogaloo/") {
+    if (document.location.pathname == '/') {
       document.getElementById("header").classList.remove("nightmode");
       document.getElementById("greetWindow").style.cssText = "background-color: #FEFFBC; color: #3a3a3a; border: solid 3px #a7a893";
       document.getElementById("innerGreetWindow").style.cssText = "border-top: solid 2px #a7a893; background-color: #FEFFBC; ";
@@ -46,7 +46,7 @@ function setTheme() {
 
   } else {
     localStorage.setItem('theme', 'dark');
-    if (document.location.pathname == "/Projet%2012%20-%20Portfolio%20II%20electric%20boogaloo/") {
+    if (document.location.pathname == "/") {
       document.getElementById("header").classList.add("nightmode");
       document.getElementById("greetWindow").style.cssText = "background-color: #9871ea; color: #eaebe1; border: solid 2px white";
       document.getElementById("innerGreetWindow").style.cssText = "border-top: solid 2px white;";
@@ -141,3 +141,6 @@ function removeStars() {
       stars[0].parentNode.removeChild(stars[0]);
   }
 }
+
+
+console.log("coucou", window.location.pathname);

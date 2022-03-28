@@ -7,6 +7,38 @@ require 'includes/db.php';
 
 <?php include 'includes/switches.html' ?>
 
+
+
+<a class="goBack" href="/"> <img src="images/back.png" alt="Go to homepage"></a>
+<div class="sectionTitle" id="myProjects"> </div>
+<div class="policy">
+    <p class="mainText" id="projectsDesc"> </p>
+</div>
+
+<div class="sectionTitle" id="works"> </div>
+<div class="alternate">
+<?php foreach($projects as $project) :
+    if($project['category'] == 'work') {
+    include 'includes/projectTemplate.php';
+} endforeach; ?>
+</div>
+
+<div class="sectionTitle" id="school"> </div>
+<div class="alternate">
+<?php foreach($projects as $project) :
+    if($project['category'] == 'school') {
+    include 'includes/projectTemplate.php';
+} endforeach; ?>
+</div>
+
+<div class="sectionTitle" id="misc"> </div>
+<div class="alternate">
+<?php foreach($projects as $project) :
+    if($project['category'] == 'misc') {
+    include 'includes/projectTemplate.php';
+} endforeach; ?>
+</div>
+
 <div class="bookmark">
     <a href="#works" > Works</a>
     <ol>
@@ -38,36 +70,6 @@ require 'includes/db.php';
         } endforeach;
         ?>
     </ol>
-</div>
-
-<a class="goBack" href="/"> <img src="images/back.png" alt="Go to homepage"></a>
-<div class="sectionTitle" id="myProjects"> </div>
-<div class="policy">
-    <p class="mainText" id="projectsDesc"> </p>
-</div>
-
-<div class="sectionTitle" id="works"> </div>
-<div class="alternate">
-<?php foreach($projects as $project) :
-    if($project['category'] == 'work') {
-    include 'includes/projectTemplate.php';
-} endforeach; ?>
-</div>
-
-<div class="sectionTitle" id="school"> </div>
-<div class="alternate">
-<?php foreach($projects as $project) :
-    if($project['category'] == 'school') {
-    include 'includes/projectTemplate.php';
-} endforeach; ?>
-</div>
-
-<div class="sectionTitle" id="misc"> </div>
-<div class="alternate">
-<?php foreach($projects as $project) :
-    if($project['category'] == 'misc') {
-    include 'includes/projectTemplate.php';
-} endforeach; ?>
 </div>
 
 <?php include 'includes/footer.php' ?>
