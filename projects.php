@@ -14,6 +14,7 @@ require 'includes/db.php';
 <div class="policy">
     <p class="mainText" id="projectsDesc"> </p>
 </div>
+<?php include 'includes/tictactoe.html' ?>
 
 <div class="sectionTitle" id="works"> </div>
 <div class="alternate">
@@ -71,6 +72,7 @@ require 'includes/db.php';
         ?>
     </ol>
 </div>
+
 
 <?php include 'includes/footer.php' ?>
 

@@ -3,3 +3,4 @@ RewriteCond %{THE_REQUEST} ^.*/index.php
 RewriteRule ^(.*)index.php$ https://celesterobert.me/$1 [R=301,L] 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+ErrorDocument 404 /404.php

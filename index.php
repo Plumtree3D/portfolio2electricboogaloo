@@ -56,7 +56,7 @@ require 'includes/head.php';
 
 
         <p class="mainText" id="aboutMeParagraph3"> I basically grew up with the internet so it's fair to say I've always had a huge interest in computers and technologies. I'd also like to make the internet more accessible and inclusive, as well as ecologically responsible. </p>
-         <a href="#" target="blank"><img id="pick" src="images/pick.svg" alt="élément décoratif"></a>
+         <a href="https://www.youtube.com/watch?v=sfsHCXaOHZQ" target="blank"><img id="pick" src="images/pick.svg" alt="élément décoratif"></a>
     </div>
 
     <div>
